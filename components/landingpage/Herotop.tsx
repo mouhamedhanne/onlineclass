@@ -82,7 +82,7 @@ headaches eliminated
               <br />
               Apprentissage Tech..
             </h1>
-            <p className="mt-5 text-[20px]">
+            <p className="mt-5 text-[20px] text-gray-500">
               Découvrez une nouvelle façon d'apprendre l'enseignement technique
               <br />
               grâce à OnlineClass. Accédez à un contenu de qualité, des outils

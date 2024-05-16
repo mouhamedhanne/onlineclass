@@ -1,9 +1,55 @@
 import Image from "next/image";
 import Illustration from "@/public/images/illustration-dashboard.png";
+import Link from "next/link";
 
 export default function Product() {
   return (
     <div>
+      <div className="relative mt-16 pb-6 sm:pt-16 sm:pb-12 lg:pb-16">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+          <div className=" mx-auto text-center">
+            <h2
+              className="text-2xl font-bold leading-[4.5rem] 
+              text-[#1E293B] lg:text-5xl"
+            >
+              Une{" "}
+              <b className="relative inline-block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="255"
+                  height="36"
+                  viewBox="0 0 255 36"
+                  fill="none"
+                  className="absolute top-8 -bottom-2 left-[-22%] lg:top-11 z-0 text-color_primary
+                    inline-block w-[150%] "
+                >
+                  <path
+                    d="M2.99975 17.6351C116.771 12.3405 178.178 12.7036 252 18.0966"
+                    stroke="currentColor"
+                    stroke-width="5.75696"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <span className="relative z-10 ">expérience</span>
+              </b>{" "}
+              d'apprentissage...
+            </h2>
+            <p className="mt-5 lg:mt-8 text-base text-gray-600 sm:text-xl">
+              Accédez à un contenu de qualité, des outils interactifs et
+              <br /> un soutien personnalisé pour réussir dans votre parcours
+              éducatif.
+            </p>
+            <Link
+              href="/"
+              className="group relative inline-flex items-center font-bold rounded-full
+              justify-center bg-color_primary px-8 py-2 text-white mt-4 h-12"
+            >
+              En Savoir Plus
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 
@@ -12,14 +58,15 @@ export default function Product() {
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
               <h2 className="text-base font-semibold leading-7 text-primary">
-                Daily note taking
+                {/**Daily note taking */}
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Create daily note <u>without efforts</u>
+                Parcours d'apprentissage<u> structuré </u>
               </p>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                You just speak about your day, we handle the rest and challenges
-                your responses.
+                Accédez à des cours organisés et structurés pour chaque domaine
+                technique et niveau de compétence. Chaque cours est conçu pour
+                offrir une progression logique et approfondie des concepts clés.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-muted-foreground lg:max-w-none">
                 <div className="relative pl-9">
@@ -40,11 +87,10 @@ export default function Product() {
                       <polyline points="16 18 22 12 16 6"></polyline>
                       <polyline points="8 6 2 12 8 18"></polyline>
                     </svg>
-                    Take daily notes
-                  </dt>
+                    Une variété de domaines
+                  </dt>{" "}
                   <dd className="inline">
-                    Our application remind you to take a daily note to keep
-                    track of your progress.
+                    tels que l'électricité, la mécanique auto, la soudure, etc.
                   </dd>
                 </div>
 
@@ -66,11 +112,12 @@ export default function Product() {
                       <polyline points="16 18 22 12 16 6"></polyline>
                       <polyline points="8 6 2 12 8 18"></polyline>
                     </svg>
-                    Auto-generated weekly and monthly summary
+                    Progression logique
                   </dt>
                   <dd className="inline">
-                    Every week, we generate a summary of your notes to help you
-                    track your progress.
+                    Les cours sont conçus pour offrir une progression logique,
+                    commençant par les concepts de base et avançant vers des
+                    sujets plus avancés.
                   </dd>
                 </div>
 
@@ -92,11 +139,12 @@ export default function Product() {
                       <polyline points="16 18 22 12 16 6"></polyline>
                       <polyline points="8 6 2 12 8 18"></polyline>
                     </svg>
-                    The AI ask you questions about your day
+                    Documents PDF téléchargeables
                   </dt>
                   <dd className="inline">
-                    We use your configuration to never forget to ask you the
-                    right questions.
+                    Téléchargez des documents PDF contenant des résumés de
+                    cours, des exercices supplémentaires et des guides de
+                    référence.
                   </dd>
                 </div>
               </dl>
@@ -125,14 +173,15 @@ export default function Product() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <h2 className="text-base font-semibold leading-7 text-primary">
-                  Remember what you did
+                  {/**Remember what you did */}
                 </h2>
                 <p className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                  Create daily note <u>without efforts</u>
+                  Évaluation dynamique et <u>suivi personnalisé</u>
                 </p>
                 <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                  You just speak about your day, we handle the rest and
-                  challenges your responses.
+                  Nos quiz interactifs offrent une évaluation dynamique de votre
+                  compréhension, avec une variété de formats de questions pour
+                  s'adapter à votre style d'apprentissage.
                 </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-muted-foreground lg:max-w-none">
                   <div className="relative pl-9">
@@ -153,11 +202,11 @@ export default function Product() {
                         <polyline points="16 18 22 12 16 6"></polyline>
                         <polyline points="8 6 2 12 8 18"></polyline>
                       </svg>
-                      Take daily notes
+                      Quiz interactifs
                     </dt>
                     <dd className="inline">
-                      Our application remind you to take a daily note to keep
-                      track of your progress.
+                      Les quiz sont conçus pour évaluer la compréhension des
+                      concepts enseignés et fournir un feedback instantané.
                     </dd>
                   </div>
 
@@ -179,11 +228,12 @@ export default function Product() {
                         <polyline points="16 18 22 12 16 6"></polyline>
                         <polyline points="8 6 2 12 8 18"></polyline>
                       </svg>
-                      Auto-generated weekly and monthly summary
+                      Diversité des formats de questions
                     </dt>
                     <dd className="inline">
-                      Every week, we generate a summary of your notes to help
-                      you track your progress.
+                      Répondez à une variété de questions, y compris des
+                      questions à choix multiples, des questions à réponse
+                      courte et des questions à réponse libre.
                     </dd>
                   </div>
 
@@ -205,11 +255,11 @@ export default function Product() {
                         <polyline points="16 18 22 12 16 6"></polyline>
                         <polyline points="8 6 2 12 8 18"></polyline>
                       </svg>
-                      The AI ask you questions about your day
+                      Suivi de la progression
                     </dt>
                     <dd className="inline">
-                      We use your configuration to never forget to ask you the
-                      right questions.
+                      Utilisez les notes pour suivre votre progression et
+                      identifier les points forts et les points faibles.
                     </dd>
                   </div>
                 </dl>

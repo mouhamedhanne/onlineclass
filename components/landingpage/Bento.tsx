@@ -13,7 +13,7 @@ export default function Bento() {
               <div className="flex-1 opacity-100 xl:pr-6 transform-none">
                 <h2 className="box-border mt-0 text-4xl  font-semibold text-left text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl mb-7 md:text-left">
                   <span className="text-color_primary"> IA Assistance </span>
-                  <span className="text-[#1E293B]">Personnalisée</span>
+                  <span className="text-color_title">Personnalisée</span>
                 </h2>
                 <p className="box-border mt-0 mb-8 text-base font-normal text-left text-gray-500 lg:text-xl md:text-left lg:mb-8">
                   Notre IA analyse rapidement les documents téléchargés et
@@ -63,7 +63,7 @@ export default function Bento() {
         >
           <h2
             className="mt-8 text-4xl sm:text-5xl font-medium tracking-tight 
-            text-black "
+            text-color_title "
           >
             Boostez votre apprentissage 🚀
             <span className="text-color_primary block pt-3 ">
@@ -84,11 +84,11 @@ export default function Bento() {
               >
                 <span
                   className="absolute top-0 left-0 w-full h-full mt-1 
-                    ml-1 bg-color_primary rounded-lg"
+                    ml-1 bg-[#EDEDA8] rounded-lg"
                 ></span>
                 <div
                   className="relative h-full p-5 bg-white transform  
-                      border-2 border-color_primary rounded-lg"
+                      border-2 border-[#99701E] rounded-lg"
                 >
                   <div className="flex items-center -mt-1">
                     <Image src={Demosvg} alt="demo" width={50} />
@@ -128,11 +128,11 @@ export default function Bento() {
               >
                 <span
                   className="absolute top-0 left-0 w-full h-full mt-1 ml-1 
-                   bg-green-500 rounded-lg"
+                   bg-[#EDEDA8] rounded-lg"
                 ></span>
                 <div
                   className="relative h-full p-5 bg-white transform  
-                     border-2 border-green-500 rounded-lg"
+                     border-2 border-[#99701E] rounded-lg"
                 >
                   <div className="flex items-center -mt-1">
                     <Image src={Demosvg} alt="demo" width={50} />
@@ -172,11 +172,11 @@ export default function Bento() {
               >
                 <span
                   className="absolute top-0 left-0 w-full h-full mt-1 ml-1 
-                    bg-green-500 rounded-lg"
+                    bg-[#EDEDA8] rounded-lg"
                 ></span>
                 <div
                   className="relative h-full p-5 bg-white transform  
-                      border-2 border-green-500 rounded-lg"
+                      border-2 border-[#99701E] rounded-lg"
                 >
                   <div className="flex items-center -mt-1">
                     <Image src={Demosvg} alt="demo" width={50} />
@@ -216,11 +216,11 @@ export default function Bento() {
               >
                 <span
                   className="absolute top-0 left-0 w-full h-full mt-1 ml-1 
-                    bg-green-500 rounded-lg"
+                    bg-[#EDEDA8] rounded-lg"
                 ></span>
                 <div
                   className="relative h-full p-5 bg-white transform  
-                      border-2 border-green-500 rounded-lg"
+                      border-2 border-[#99701E] rounded-lg"
                 >
                   <div className="flex items-center -mt-1">
                     <Image src={Demosvg} alt="demo" width={50} />

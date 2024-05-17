@@ -10,12 +10,12 @@ export default function page() {
   return (
     <Container>
       <div className="">
-        <div className="m-auto py-20 lg:py-28 max-w-5xl flex max-lg:flex-col">
+        <div className="m-auto py-10 lg:py-28 px-2 lg:px-0 max-w-5xl flex max-lg:flex-col">
           <div className="flex-1 space-y-2 mb-4 lg:mb-0">
             <p className="font-extrabold uppercase text-color_primary">FAQ</p>
             <h3
               className="scroll-m-20 font-caption font-semibold tracking-tight 
-            transition-colors first:mt-0 text-5xl "
+            transition-colors text-color_title first:mt-0 text-5xl "
             >
               Questions fréquentes
             </h3>
@@ -24,48 +24,52 @@ export default function page() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger>
-                  Quels types d'IA puis-je trouver sur DockAI ?
+                  Comment puis-je m'inscrire sur la plateforme ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Notre plateforme référence des solutions IA couvrant le
-                  marketing, la création de contenu, la productivité, l'analyse
-                  de données et plus encore.
+                  Cliquez sur le bouton "S'inscrire" en haut de la page
+                  d'accueil, remplissez le formulaire avec vos informations et
+                  suivez les instructions pour confirmer votre inscription.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger>
-                  Les outils IA sont-ils gratuits ou payants ?
+                  Quels types de cours sont disponibles ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  DockAI propose à la fois des options gratuites et payantes
-                  pour répondre à tous les besoins et budgets.
+                  Nous offrons des cours dans divers domaines techniques tels
+                  que l'électricité, la mécanique, la soudure, et plus, pour
+                  tous les niveaux de compétence.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
                 <AccordionTrigger>
-                  Comment savoir si une IA est fiable ?
+                  Comment fonctionnent les quiz et évaluations ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Nous intégrons uniquement des solutions éprouvées et analysées
-                  par nos experts. Les notes et avis vous guident aussi.
+                  Chaque leçon comprend des quiz interactifs pour tester votre
+                  compréhension, avec un feedback instantané. Des évaluations
+                  plus larges sont disponibles à la fin de chaque chapitre.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-4">
                 <AccordionTrigger>
-                  Puis-je essayer les outils avant de m'abonner ?
+                  Puis-je accéder à la plateforme hors ligne ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Oui, la plupart des IA payantes offrent des versions d'essai
-                  ou des plans gratuits pour tester.
+                  Vous pouvez télécharger des PDF des cours pour une
+                  consultation hors ligne, mais les fonctionnalités interactives
+                  nécessitent une connexion Internet.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-5">
                 <AccordionTrigger>
-                  Comment trouver l'IA idéale pour mes besoins ?
+                  Comment puis-je obtenir de l'aide d'un mentor ?
                 </AccordionTrigger>
                 <AccordionContent>
-                  Notre puissant système de recherche et de filtres vous permet
-                  d'affiner vos critères pour identifier la meilleure solution.
+                  Accédez à la section "Mentoring" et choisissez un mentor
+                  disponible pour planifier une session de soutien ou poser des
+                  questions spécifiques.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

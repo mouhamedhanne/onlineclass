@@ -11,7 +11,7 @@ export default function Header() {
             <div>
               <Logo width="60" />
             </div>
-            <div className="flex">
+            <div className="flex hidden lg:block">
               <ul className="flex items-center space-x-5 font-semibold text-[18px]">
                 <li>
                   <Link href="/">News</Link>

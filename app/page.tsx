@@ -1,4 +1,3 @@
-//import Features from "@/components/landingpage/Features"; <Features />
 import Header from "@/components/landingpage/Header";
 import Herotop from "@/components/landingpage/Herotop";
 import Plateform from "@/components/landingpage/Plateform";
@@ -6,6 +5,7 @@ import Product from "@/components/landingpage/Product";
 import Bento from "@/components/landingpage/Bento";
 import FAQ from "@/components/landingpage/FAQ";
 import CTA from "@/components/landingpage/CTA";
+import Footer from "@/components/landingpage/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +17,7 @@ export default function Home() {
       <Bento />
       <FAQ />
       <CTA />
+      <Footer />
     </main>
   );
 }

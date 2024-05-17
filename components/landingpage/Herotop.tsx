@@ -8,7 +8,7 @@ export default function page() {
       <div className="mt-16 ">
         <div className="flex justify-between items-start">
           <div className="mt-5">
-            <div className="flex items-center space-x-3">
+            <div className="block lg:flex lg:space-y-0 space-y-3 items-center space-x-3">
               <div className="border rounded-full px-6 py-2">
                 OnlineClass 1.0 à venir!
               </div>
@@ -77,16 +77,19 @@ export default function page() {
             {/**Customer support
 headaches eliminated
  */}
-            <h1 className="font-extrabold text-6xl text-[#1E293B] leading-[4.5rem] mt-5">
+            <h1
+              className="font-extrabold text-4xl lg:text-6xl text-color_title 
+              lg:leading-[4.5rem] mt-5 text-center lg:text-left"
+            >
               Réinventez Votre
-              <br />
+              <br className="hidden lg:block" />
               Apprentissage Tech..
             </h1>
-            <p className="mt-5 text-[20px] text-gray-500">
+            <p className="mt-5 text-[20px] text-center lg:text-left text-gray-500">
               Découvrez une nouvelle façon d'apprendre l'enseignement technique
-              <br />
+              <br className="hidden lg:block" />
               grâce à OnlineClass. Accédez à un contenu de qualité, des outils
-              <br />
+              <br className="hidden lg:block" />
               interactifs pour réussir dans votre parcours éducatif.
             </p>
             <div className="mt-7 flex items-center space-x-4">
@@ -100,7 +103,12 @@ headaches eliminated
             </div>
           </div>
           <div>
-            <Image src={Illustratiom} alt="illustration" width={500} />
+            <Image
+              src={Illustratiom}
+              alt="illustration"
+              width={500}
+              className="hidden lg:block"
+            />
           </div>
         </div>
       </div>

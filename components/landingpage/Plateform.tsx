@@ -1,21 +1,23 @@
 import Container from "@/components/elements/Container";
 import Image from "next/image";
-import Illustration_Dashbard from "@/public/images/illustration-dashboard.png";
+import Illustration_Dashbard from "@/public/images/dashboard-shots.png";
+
 import Predict_Analytic from "@/public/images/predict-analytic.svg";
 
 export default function Plateform() {
   return (
     <Container>
       <div className="mb-10 mt-10 relative py-4">
-        <div className="absolute -top-[4rem] right-3 z-30">
+        <div className="absolute -top-[4rem] right-3 z-30 hidden lg:block">
           <Image src={Predict_Analytic} alt="prediction analytique" />
         </div>
         <div className="flex justify-center">
+          {/**border border-gray-500 border-8 */}
           <Image
             src={Illustration_Dashbard}
             alt="Illustration Dashboard"
             width={1000}
-            className="border border-gray-500 border-8 rounded-xl"
+            className=" rounded-xl"
           />
         </div>
         <div className="absolute z-20 top-[20rem] left-[32rem]">

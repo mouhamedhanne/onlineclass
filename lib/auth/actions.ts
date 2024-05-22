@@ -35,3 +35,17 @@ export const signOut = async () => {
   await supabase.auth.signOut();
   redirect("/");
 };
+
+export const sendMagicLink = async (email: any) => {
+  const supabase = await createActionServer();
+  const { error } = await supabase.auth.signInWithOtp({
+    email,
+  });
+
+  if (error) {
+    return {
+      message: error.message,
+    };
+  }
+  redirect("/dashboard");
+};

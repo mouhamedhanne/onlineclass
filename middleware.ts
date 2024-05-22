@@ -8,6 +8,19 @@ export async function middleware(request: NextRequest) {
     },
   });
 
+  const publicUrls = [
+    "/",
+    "/auth",
+    "/auth/confirmation",
+    "/api/auth/confirm",
+    "/api/auth/callback",
+    "/auth/sent-reset-password",
+    "/auth/send-magic-link",
+  ];
+  if (publicUrls.includes(request.nextUrl.pathname)) {
+    return response;
+  }
+
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -58,20 +71,13 @@ export async function middleware(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (
-    !user &&
-    !request.nextUrl.pathname.startsWith("/auth") &&
-    request.nextUrl.pathname !== "/" &&
-    request.nextUrl.pathname !== "/api/auth/confirm"
-  ) {
+  if (!user) {
     return NextResponse.redirect(new URL("/auth", request.url));
   }
 
   return response;
 }
- 
+
 export const config = {
-  matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
-  ], 
+  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
 };

@@ -71,6 +71,12 @@ export default function authPage() {
       >
         {signin ? "Pas de compte ?" : "Deja un compte ?"}
       </Link>
+
+      {signin && (
+        <Link className="mt-6 hover:underline" href={"/auth/send-magic-link"}>
+          Connexion avec Magic Link
+        </Link>
+      )}
     </div>
   );
 }

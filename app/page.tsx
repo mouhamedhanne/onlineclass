@@ -18,6 +18,7 @@ export default function Home() {
       <FAQ />
       <CTA />
       <Footer />
+      <div>hello  admin</div>
     </main>
   );
 }
